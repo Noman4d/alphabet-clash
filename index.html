@@ -16,14 +16,14 @@
   </head>
   <body class="font-pop">
     <main  class="min-h-screen bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center">
-      <section class="home text-white  flex-col justify-center items-center hidden ">
+      <section class="home text-white  flex-col justify-center items-center  ">
         <div class="flex flex-col min-h-screen justify-center items-center gap-y-5">
         <h1 class="font-anton font-normal text-[140px]">ALPHABET CLASH</h1>
         <p class="font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn btn-primary bg-white text-black">Primary</button>
+        <button onclick="play()" class="btn btn-primary bg-white text-black">Primary</button>
         </div>
       </section>
-      <section class="play-ground">
+      <section class="play-ground hidden">
          <div class="flex flex-col items-center gap-20 py-10">
           <!-- screen -->
           <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
@@ -87,7 +87,15 @@
          </div>
          </div>
       </section>
-      <section class="score"></section>
+      <section class="score hidden flex justify-center items-center min-h-screen ">
+        <div class="text-white bg-[#ffffff33] text-center space-y-4 p-10 rounded-xl">
+          <h1 class="text-8xl">Score:14</h1>
+          <button class="btn btn-primary bg-white">Play Again</button>
+          <p>Practice will make you a pro</p>
+        </div>
+      </section>
     </main>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
