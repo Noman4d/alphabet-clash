@@ -6,7 +6,6 @@ function play() {
 
 function continueGame(params) {
   const alphabet = getRandomAlphabets();
-  console.log(alphabet);
   const currentAlphabetElement = document.getElementById("current-alphabet");
   currentAlphabetElement.innerText = alphabet;
   addBackgroundColorById(alphabet);
@@ -18,7 +17,7 @@ function handleButtonByPress(event) {
   const currentAlphabetElement = document.getElementById("current-alphabet");
   const currentAlphabet = currentAlphabetElement.innerText;
   const expectedAlphabet = currentAlphabet.toLowerCase()
-  console.log(playerPressed,currentAlphabet);
+  
 
   if (playerPressed===expectedAlphabet) {
     continueGame()
@@ -36,7 +35,14 @@ function handleButtonByPress(event) {
     const reduceLife = currentLife - 1 ; 
     currentLifeElement.innerText = reduceLife ; 
 
+    if (reduceLife===0) {
+      gameOver()
+    }
+
   }
 }
-
+function gameOver() {
+  hideElementsById('play-ground')
+  showElementById('score-page')
+}
 document.addEventListener("keyup", handleButtonByPress);
