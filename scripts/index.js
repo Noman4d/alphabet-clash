@@ -9,4 +9,5 @@ function continueGame(params) {
   console.log(alphabet);
   const currentAlphabetElement = document.getElementById('current-alphabet');
   currentAlphabetElement.innerText = alphabet;
+  addBackgroundColorById(alphabet);
 }

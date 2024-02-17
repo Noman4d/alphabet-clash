@@ -20,3 +20,7 @@ function getRandomAlphabets() {
 
   
 }
+function addBackgroundColorById(elementsId) {
+  const element = document.getElementById(elementsId);
+  element.classList.add('bg-orange-400')
+}
