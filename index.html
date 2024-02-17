@@ -16,22 +16,22 @@
   </head>
   <body class="font-pop">
     <main  class="min-h-screen bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center">
-      <section class="home text-white  flex-col justify-center items-center  ">
+      <section id="home-section" class="home text-white  flex-col justify-center items-center  ">
         <div class="flex flex-col min-h-screen justify-center items-center gap-y-5">
         <h1 class="font-anton font-normal text-[140px]">ALPHABET CLASH</h1>
         <p class="font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
         <button onclick="play()" class="btn btn-primary bg-white text-black">Primary</button>
         </div>
       </section>
-      <section class="play-ground hidden">
+      <section id="play-ground" class=" hidden">
          <div class="flex flex-col items-center gap-20 py-10">
           <!-- screen -->
           <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
             <div class="flex justify-center">
-              <p class="bg-[#2F2941] text-white  px-7 py-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
+              <p  class="bg-[#2F2941] text-white  px-7 py-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
             </div>
             <div class="flex justify-center items-center">
-              <p class="text-black text-9xl">Y</p>
+              <p id="current-alphabet" class="text-black text-9xl uppercase">Y</p>
             </div>
           </div>
          <!-- keyboard -->
@@ -95,7 +95,7 @@
         </div>
       </section>
     </main>
-
+    <script src="./scripts/utilty.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
