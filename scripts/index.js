@@ -23,6 +23,11 @@ function handleButtonByPress(event) {
   if (playerPressed===expectedAlphabet) {
     continueGame()
     removeBackgroundColorById(expectedAlphabet);
+    const currentScoreElement = document.getElementById('current-score')
+    const currentScoreText = currentScoreElement.innerText;
+    const currentScore = parseInt(currentScoreText);
+    const newScore = currentScore + 1;
+    currentScoreElement.innerText = newScore;
   }
   else{
     console.log('oh missed!');
