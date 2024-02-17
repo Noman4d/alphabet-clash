@@ -30,7 +30,12 @@ function handleButtonByPress(event) {
     currentScoreElement.innerText = newScore;
   }
   else{
-    console.log('oh missed!');
+    const currentLifeElement = document.getElementById('current-life');
+    const currentLifeText = currentLifeElement.innerText;
+    const currentLife = parseInt(currentLifeText);
+    const reduceLife = currentLife - 1 ; 
+    currentLifeElement.innerText = reduceLife ; 
+
   }
 }
 
