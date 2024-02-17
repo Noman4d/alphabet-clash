@@ -24,3 +24,7 @@ function addBackgroundColorById(elementsId) {
   const element = document.getElementById(elementsId);
   element.classList.add('bg-orange-400')
 }
+function removeBackgroundColorById(elementsId) {
+  const element = document.getElementById(elementsId);
+  element.classList.remove('bg-orange-400')
+}
