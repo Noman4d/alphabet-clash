@@ -38,8 +38,7 @@
         <div class="flex flex-col items-center gap-20 py-10">
           <!-- screen -->
           <div
-            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]"
-          >
+            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]"  >
             <div class="flex justify-center">
               <p class="bg-[#2F2941] text-white px-7 py-4 rounded-b-xl">
                 Don't watch keyboard while playing...
@@ -109,8 +108,8 @@
       <section id="score-page" class="hidden flex justify-center items-center min-h-screen" >
         <div class="text-white bg-[#ffffff33] text-center space-y-4 p-10 rounded-xl">
           <h4 class="text-3xl">Game Over!!</h4>
-          <h1 class="text-8xl">Score:14</h1>
-          <button class="btn btn-primary">Play Again</button>
+          <h1 id="last-score" class="text-8xl">Score:14</h1>
+          <button onclick="play()" class="btn btn-primary">Play Again</button>
           <p>Practice will make you a pro</p>
         </div>
       </section>
